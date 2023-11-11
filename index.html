@@ -1,36 +1,60 @@
 
 <body>
 
-<br>
+<script>
+    document.addEventListener("DOMContentLoaded", ()=>{
+        document.getElementById("defaultOpen").click();
+    })
+</script>
 
-<h1>Anoushka Alavilli</h1>
-
-<div>
-    <img src="profilepic.jpg" style="float:right; left:100px; margin-left: 20px;" width="200" height="200"><br><br>
-    <p>Hello! I am a Master's student in the Department of Electrical & Computer Engineering at Carnegie Mellon University,
-    in Pittsburgh, PA. I am a member of the Robotic Exploration Lab in the Robotics Institute advised by Professor Zac Manchester.
-    My interests are in robotics, optimal control, and machine learning, as well as at the intersection of these areas.
-    I am also interested in their applications to trustworthy autonomy for safety-critical systems, multi-agent systems, and
-    human-robot collaboration.
-    </p>
-
-    <p>
-    I am currently working on a project using Koopman operators to estimate the time-varying dynamics of an off-road vehicle.
-    Recently, I submitted a paper to ICRA 2024 on a fast model-predictive control (MPC) solver for embedded applications.
-    </p>
-
-    <p>
-    Last summer, I interned at NASA Jet Propulsion Laboratory where I developed
-    a machine learning tool for Mars 2020 mission operations. I have also interned at MIT Lincoln Laboratory in the
-    Advanced Sensors and Techniques Group, where I developed a machine learning tool for situational-awareness in space.
-    </p>
-
-    <p>
-        In my undergraduate studies at Tufts University in Medford, MA, I had many incredible mentors, including my advisors Professor
-        Mai Vu and Professor Mike Levin.
-    </p>
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+    <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+    <button class="tablinks" onclick="openCity(event, 'Resume')">Resume</button>
 </div>
 
+<!-- Tab content -->
+<div id="Home" class="tabcontent">
+    <h1>Anoushka Alavilli</h1>
+
+    <div>
+        <img src="profilepic.jpg" style="float:right; left:100px; margin-left: 20px;" width="200" height="200"><br><br>
+        <p>Hello! I am a Master's student in the Department of Electrical & Computer Engineering at Carnegie Mellon University,
+        in Pittsburgh, PA. I am a member of the Robotic Exploration Lab in the Robotics Institute advised by Professor Zac Manchester.
+        My interests are in robotics, optimal control, and machine learning, as well as at the intersection of these areas.
+        I am also interested in their applications to trustworthy autonomy for safety-critical systems, multi-agent systems, and
+        human-robot collaboration.
+        </p>
+
+        <p>
+        I am currently working on a project using Koopman operators to estimate the time-varying dynamics of an off-road vehicle.
+        Recently, I submitted a paper to ICRA 2024 on a fast model-predictive control (MPC) solver for embedded applications.
+        </p>
+
+        <p>
+        Last summer, I interned at NASA Jet Propulsion Laboratory where I developed
+        a machine learning tool for Mars 2020 mission operations. I have also interned at MIT Lincoln Laboratory in the
+        Advanced Sensors and Techniques Group, where I developed a machine learning tool for situational-awareness in space.
+        </p>
+
+        <p>
+            In my undergraduate studies at Tufts University in Medford, MA, I had many incredible mentors, including my advisors Professor
+            Mai Vu and Professor Mike Levin.
+        </p>
+    </div>
+</div>
+
+<div id="Projects" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Resume" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<br>
 
 </body>
 
@@ -43,6 +67,9 @@
     h1{
         font-family:'Computer Modern Serif';
         font-weight: bold;
+    }
+    h3{
+        font-family:'Computer Modern Serif';
     }
     h4{
         font-family:'Computer Modern Serif';
@@ -78,6 +105,63 @@
         font-display: swap;
         src: url("CMUSerif-BoldItalic.woff2");
     }
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+  
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+    background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+    background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    }
     
 </style>
+
+<script>
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+    
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+</script>
 
