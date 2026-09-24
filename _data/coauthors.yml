@@ -1,0 +1,7 @@
+# Coauthor names listed here are linked to their websites wherever they appear in a
+# publication's author list. Keys are lowercase last names; `firstname` lists every
+# spelling that shows up in _bibliography/papers.bib.
+#
+# "manchester":
+#   - firstname: ["Zachary", "Zac", "Z."]
+#     url: https://example.com/

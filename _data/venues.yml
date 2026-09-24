@@ -1,0 +1,5 @@
+# Styling for the venue badges shown next to publications. The key must match the
+# `abbr` field of a bib entry in _bibliography/papers.bib.
+"ICRA":
+  url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
+  color: "#00369f"
