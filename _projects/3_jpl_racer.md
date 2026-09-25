@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Visual Terrain-Aware Terradynamics (DARPA RACER)
-description: vision-based dynamics modeling for off-road driving, at NASA JPL
+title: Dynamics Modeling using Visual Terrain Information
+description: vision-based dynamics modeling for off-road driving at NASA JPL
 img: assets/img/publication_preview/racer.png
 importance: 3
 category: work
