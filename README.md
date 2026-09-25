@@ -29,7 +29,7 @@ SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk bundle install
 | News items on the homepage | `_news/*.md` (one file per item) |
 | Publications | `_bibliography/papers.bib` — `selected={true}` also puts an entry on the homepage |
 | Projects | `_projects/*.md` |
-| CV | `_pages/cv.md`, serving `assets/pdf/Alavilli_Resume.pdf` |
+| Resume | `_pages/resume.md`, serving `assets/pdf/Alavilli_Resume.pdf` |
 | Site title, name, URL, feature flags | `_config.yml` |
 | Social links | `_data/socials.yml` |
 | Venue badge colors | `_data/venues.yml` |

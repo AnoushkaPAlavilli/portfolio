@@ -1,5 +1,17 @@
 # Styling for the venue badges shown next to publications. The key must match the
 # `abbr` field of a bib entry in _bibliography/papers.bib.
 "ICRA":
-  url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
+  url: https://2025.ieee-icra.org/
+  color: "#FF0000"
+
+"IROS":
+  url: https://2026.ieee-iros.org/
   color: "#00369f"
+
+"IROS-W":
+  url: https://2026.ieee-iros.org/
+  color: "#6c757d"
+
+"GECCO":
+  url: https://gecco-2022.sigevo.org/
+  color: "#00ab37"
