@@ -2,6 +2,7 @@
 layout: page
 title: TinyMPC
 description: model-predictive control on resource-constrained microcontrollers
+img: assets/img/publication_preview/tinympc.png
 importance: 4
 category: work
 related_publications: true
