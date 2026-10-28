@@ -6,7 +6,7 @@
 # "Cv pdf" — not configurable). Points at the resume PDF.
 cv_pdf: /assets/pdf/Alavilli_Resume.pdf
 # email: # add the address you want listed publicly
-github_username: AnoushkaPAlavilli
+# github_username: AnoushkaPAlavilli
 # linkedin_username:
 # scholar_userid: # your Google Scholar ID, from the URL of your profile page
 # semanticscholar_id:
