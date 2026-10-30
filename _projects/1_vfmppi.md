@@ -18,7 +18,7 @@ We evaluate our results in the [BeamNG](https://beamng.tech/) simulator, demonst
 86% navigation success versus 55% for baseline MPPI across unseen off-road evaluation tasks,
 while substantially reducing vehicle jerk, acceleration, pitch, and roll. We also use online adaptation to update the value function with driving experience.
 
-This work was accepted as a **full paper with oral presentation** at IEEE IROS 2026. Arxiv link coming soon!
+This work was accepted as a **full paper with oral presentation** at IEEE IROS 2026. [Arxiv link](https://arxiv.org/abs/2610.38731).
 
 Since publishing this work, we have deployed the algorithm on a full-size Yamaha ATV in
 collaboration with the [Airlab](https://theairlab.org/) at CMU. Stayed tuned for sim-to-real work on this!
